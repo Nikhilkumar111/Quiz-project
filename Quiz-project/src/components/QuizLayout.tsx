@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-import React from 'react'
-=======
->>>>>>> 131ea5a (Initial commit with project files)
+
 import Sidebar from './Sidebar'
 import Question  from './Question'
 const QuizLayout = () => {
@@ -9,9 +6,8 @@ const QuizLayout = () => {
      <div className='flex h-screen'>
      <Sidebar/>
      <div className='flex-1 flex flex-col items-center justify-center'>
- <Question/>
+       <Question/>
      </div>
-    
     </div>
   )
 }

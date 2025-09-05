@@ -25,15 +25,9 @@ interface QuizState {
   solution: () => void;
 }
 
-<<<<<<< HEAD
-const useQuizStore = create<QuizState>((set, get) => ({
-  currentQuestion: 0,
-  answers: Array(10).fill(null),
-=======
 const useQuizStore = create<QuizState>((set) => ({
   currentQuestion: 0,
   answers: Array(13).fill(null), // Set to match the number of questions
->>>>>>> 131ea5a (Initial commit with project files)
   score: 0,
   showScore: false,
   showSolution: false,

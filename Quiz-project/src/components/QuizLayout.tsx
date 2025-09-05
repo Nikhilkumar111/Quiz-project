@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 import React from 'react'
+=======
+>>>>>>> 131ea5a (Initial commit with project files)
 import Sidebar from './Sidebar'
 import Question  from './Question'
 const QuizLayout = () => {

@@ -1,8 +1,14 @@
 import useQuizStore from "../store/useQuizStore";
+<<<<<<< HEAD
 // import QuestionType from "../store/useQuizStore"
 const Question = () => {
   const {
 
+=======
+
+const Question = () => {
+  const {
+>>>>>>> 131ea5a (Initial commit with project files)
     questions,
     currentQuestion,
     selectAnswer,
@@ -14,7 +20,10 @@ const Question = () => {
     resetQuiz,
     solution,
     showSolution,
+<<<<<<< HEAD
     
+=======
+>>>>>>> 131ea5a (Initial commit with project files)
   } = useQuizStore();
 
   if (showScore) {
@@ -35,7 +44,10 @@ const Question = () => {
     );
   }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 131ea5a (Initial commit with project files)
   const question = questions[currentQuestion];
   const currentAnswer = answers[currentQuestion];
 
@@ -60,13 +72,24 @@ const Question = () => {
 
       {/* List of options */}
       <div className="space-y-3 mb-6">
+<<<<<<< HEAD
         {question.options.map((option, index) => {
+=======
+        {question.options?.map((option: string, index: number) => {
+>>>>>>> 131ea5a (Initial commit with project files)
           let optionClasses = "bg-white border-gray-300 hover:bg-gray-50";
 
           if (showSolution) {
             if (index === question.correctAnswer) {
               optionClasses = "bg-green-100 border-green-500";
+<<<<<<< HEAD
             } else if (index === currentAnswer && currentAnswer !== question.correctAnswer) {
+=======
+            } else if (
+              index === currentAnswer &&
+              currentAnswer !== question.correctAnswer
+            ) {
+>>>>>>> 131ea5a (Initial commit with project files)
               optionClasses = "bg-red-100 border-red-500";
             }
           } else if (currentAnswer === index) {
@@ -111,8 +134,12 @@ const Question = () => {
           <p>
             <strong>Correct Answer:</strong>{" "}
             <span className="font-semibold text-green-700">
+<<<<<<< HEAD
 
               {question.options[question.correctAnswer]}
+=======
+              {question.options?.[Number(question.correctAnswer)]}
+>>>>>>> 131ea5a (Initial commit with project files)
             </span>
           </p>
           <p className="mt-2">

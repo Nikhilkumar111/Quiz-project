@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 import React from "react";
+=======
+>>>>>>> 131ea5a (Initial commit with project files)
 import { FaCheckCircle } from "react-icons/fa";
 import useQuizStore from '../store/useQuizStore'; // adjust path as needed
 
